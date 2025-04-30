@@ -1,80 +1,48 @@
-# 🫀 Heart Disease Prediction Model
+# Heart-disease-prediction-model
 
-An interactive web app built with Streamlit that predicts the likelihood of heart disease based on medical input data.
+This project is a machine learning-based web application that predicts the likelihood of heart disease in a person based on key health parameters. It uses a trained classification model deployed using Streamlit for interactive use.
 
-## 🔍 Overview
+🚀 Features
+	•	Predicts risk of heart disease using clinical features
+	•	User-friendly interface with Streamlit
+	•	Trained on a public heart disease dataset
+	•	Quick and efficient real-time predictions
 
-This project uses a machine learning model trained on health-related features to predict whether an individual is at risk of heart disease. The interface is powered by Streamlit, making it simple and user-friendly.
+📁 Files Overview
+	•	HeartDiseasePrediction.ipynb: Jupyter notebook containing EDA, preprocessing, model training, and evaluation.
+	•	dataset_heart.csv: Dataset used for training and testing the machine learning model.
+	•	streamlit2.py: Streamlit web application script for model deployment.
 
-## 📊 Features
-
-- Intuitive UI for entering medical data (age, cholesterol, etc.)
-- Trained on the UCI Heart Disease dataset
-- Instant prediction using a trained ML model
-- Streamlit-based web app for rapid deployment and interaction
-
-## 🚀 Tech Stack
-
-| UI / Frontend  | Backend        | ML / Data Science | Deployment |
-|----------------|----------------|-------------------|------------|
-| Streamlit      | Python         | Pandas, Scikit-learn | Streamlit Cloud / Local |
-
-## 📁 Project Structure
+🛠️ How to Run
+	1.	Clone the repository
+                                    git clone https://github.com/your-username/heart-disease-prediction.git
+                                    cd heart-disease-prediction
+                                    
+  2.  Install dependencies          pip install -r requirements.txt
+      
+  3.  Run the app                   streamlit run streamlit2.py
 
 
-## 🧠 How It Works
+  🧠 Model Information
+
+The model was trained using standard classifiers such as Logistic Regression, Decision Trees, and Random Forest on a cleaned version of the heart disease dataset.
+
+📊 Dataset Features
+	•	Age, Sex, Chest Pain Type, Resting BP, Cholesterol, Fasting Blood Sugar, etc.
+	•	Target: Presence (1) or absence (0) of heart disease.
+
+  🧠 How It Works
 
 1. User enters medical details in the app (e.g., age, cholesterol, resting BP).
 2. Inputs are passed to the trained ML model.
 3. The model predicts the likelihood of heart disease.
 4. The result is displayed instantly.
 
-## 🗂 Dataset
+📌 Requirements
+	•	Python 3.7+
+	•	Streamlit
+	•	Pandas, Numpy
+	•	Scikit-learn
+	•	Matplotlib / Seaborn (for notebook)
 
-The model is trained using the [UCI Heart Disease dataset](https://archive.ics.uci.edu/ml/datasets/heart+Disease).
-
-## ▶️ Running the App Locally
-
-1. **Clone the repository**
-    ```bash
-    git clone https://github.com/your-username/heart-disease-prediction.git
-    cd heart-disease-prediction
-    ```
-
-2. **Install dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. **Run the app**
-    ```bash
-    streamlit run heart_app.py
-    ```
-
-4. **Open in browser**
-    Visit `http://localhost:8501` automatically or copy-paste it into your browser.
-
-## 🌐 Deploy Online
-
-Deploy easily using [Streamlit Cloud](https://streamlit.io/cloud) by pushing your code to GitHub and connecting your repository.
-
-## ✨ Future Work
-
-- Model comparisons with advanced algorithms
-- Add visualizations and charts for input stats
-- Store user input and prediction history
-- Integrate feedback or risk recommendations
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-## 📄 License
-
-MIT License
-
-## 🙏 Acknowledgements
-
-- [UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/heart+Disease)
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [Scikit-learn](https://scikit-learn.org/stable/)
+ This project is open-source and available under the MIT License.
